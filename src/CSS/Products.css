@@ -1,0 +1,499 @@
+.product-top {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 1.5rem;
+  max-width: 1450px;
+  margin: 10px auto;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #f6fcff, #e9faff);
+  border-radius: 20px;
+  box-shadow: 0 10px 12px 10px rgba(91, 110, 110, 0.5);
+}
+
+.category-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1.8rem;
+  justify-content: center;
+}
+
+.category-buttons button {
+  background: #f1f7f9;
+  border: none;
+  padding: 10px 7px;
+  border-radius: 12px;
+  font-weight: 700;
+  color: #053132;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.category-buttons button.active {
+  background: #00a8a9;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 168, 169, 0.25);
+}
+
+.search-section {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  background: #f8feff;
+  border: 1px solid #bff3f4;
+  border-radius: 14px;
+  padding: 0.6rem 1rem;
+}
+
+.search-section input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  color: #333;
+}
+
+.search-section input::placeholder {
+  color: #888;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.toggle-buttons button {
+  background: #00a8a9;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle-buttons button.active {
+  background: #00368d;
+  transform: scale(1.06);
+}
+
+.toggle-buttons button:hover {
+  background: #2d3034 !important;
+  transform: scale(1.1);
+  color: #fff;
+}
+
+.toggle-buttons button:hover {
+  background: #008c8d;
+}
+
+.top-content {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.top-content h1 {
+  font-size: 42px;
+  text-align: center;
+  color: #008c8d;
+  margin-bottom: 10px;
+}
+
+.top-content h4 {
+  text-align: center;
+  font-size: 17px;
+}
+
+/* products section */
+.products-section{
+  margin-top: 40px;
+}
+.product-count{
+  text-align: center;
+  margin: 20px 0;
+}
+.product-count h2{
+  font-size: 30px;
+  font-family: system-ui;
+  color: #092525;
+}
+.product-count span{
+  display: inline-block;
+  background:linear-gradient(90deg, #00adff5e, #008cff);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+}
+
+
+
+.product-card {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 25px;
+  background: #f9ffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+  transition: all 0.3s ease;
+}
+.product-card:hover{
+  border:1px solid  #1369f4;
+}
+.product-image {
+  overflow: hidden; 
+   border-radius: 12px;   
+  
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 0.5s ease;
+  transform: scale(1)
+}
+.product-image img:hover{
+  transform: scale(1.05);
+  
+}
+
+.product-title{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 4px 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-title span {
+    display: inline-block;
+    color: #007c91;
+    background: linear-gradient(90deg, rgb(94 82 82 / 33%), #70008063, #00fff86b);
+    padding: 6px;
+    border-radius: 7px;
+    font-size: 15px;
+    color: rgb(1, 1, 1);
+    font-family: monospace;
+}
+.product-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+}
+
+
+.product-details-middle {
+  display: grid;
+  gap: 15px;
+}
+
+
+.product-details-right {
+  display: grid;
+  gap: 20px;
+}
+
+
+.detail {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+.detail h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.detail h4 >li::marker{
+    font-size: 20px;
+  color: #0d3273;
+}
+.dosage h4 >li::marker{
+    font-size: 20px;
+  color: #731b0d;
+}
+.detail p {
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+.detail p ul{
+  padding: 8px;
+}
+.detail >li {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #1e4550;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* table-section */
+
+.products-table-section {
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.products-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: #e6f7f9;
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.products-table thead {
+  background-color: #0097a7;
+  color: white;
+  text-align: left;
+}
+
+.products-table th,
+.products-table td {
+  padding: 15px;
+  vertical-align: center;
+  border-bottom: 1px solid #bfe6ea;
+
+}
+
+.products-table th {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.products-table tbody tr{
+  height: 260px;
+  transition: all 0.3s ease;
+
+}
+.products-table tbody tr:hover{
+ transform: scale(1.03);
+ background-color: rgba(127, 201, 238, 0.12);
+  
+}
+
+.products-table td {
+  color: #333;
+  font-size: 13px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.products-table td ul {
+  list-style-type: disc;
+  padding-left: 18px;
+  margin: 0;
+  max-height: 120px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.products-table td li {
+  margin-bottom: 6px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.products-table td li::marker {
+  font-size: 1.2em;
+  color: #0097a7;
+}
+
+.products-table td:nth-child(1) {
+  width: 140px;
+  text-align: center;
+}
+
+.products-table td:nth-child(2) {
+  width: 155px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+}
+
+.products-table td:nth-child(3) {
+  width: 140px;
+    font-weight: 700;
+  font-size: 16px;
+  color: #007c91;
+  text-align: center;
+}
+.products-table td:last-child{
+ width: 150px;
+}
+.products-table td:nth-child(7){
+ font-weight: 700;
+ font-size: 16px;
+ color: #00368d;
+}
+
+.table-product-img {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  margin: auto;
+  display: block;
+}
+
+.no-products {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+
+
+@media (max-width: 992px) {
+  .product-card {
+    grid-template-columns: 1fr; 
+    text-align: center;
+    padding: 15px;
+  }
+
+  .product-image {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .product-info {
+    grid-template-columns: 1fr; 
+  }
+  .detail h4 >li::marker{
+    font-size: 18px;
+  color: #0d3273;
+}
+
+  .product-title {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .product-details-right {
+    grid-template-columns: 1fr;
+  }
+
+  .category-buttons {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+  }
+
+  .toggle-buttons {
+    justify-content: center;
+  }
+
+  .product-top {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .product-count h2 {
+    font-size: 26px;
+  }
+
+  .product-count span {
+    font-size: 16px;
+  }
+  .detail{
+    text-align: left;
+  }
+}
+
+
+@media (max-width: 540px) {
+  .top-content h1 {
+    font-size: 28px;
+  }
+
+  .top-content h4 {
+    font-size: 14px;
+  }
+
+  .product-card {
+    padding: 12px;
+    border-radius: 10px;
+    gap: 15px;
+  }
+
+  .product-image {
+    max-width: 100%;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: auto;
+  }
+  .detail h4 >li::marker{
+    font-size: 14px;
+  color: #0d3273;
+}
+  .product-info {
+    grid-template-columns: 1fr; 
+    gap: 15px;
+  }
+
+  .product-details-right,
+  .product-details-middle {
+    grid-template-columns: 1fr;
+  }
+
+  .detail {
+    padding: 10px 18px;
+  }
+
+  .detail h4 {
+    font-size: 16px;
+  }
+
+  .detail p {
+    font-size: 12px;
+  }
+
+  .category-buttons button {
+    padding: 8px 6px;
+    font-size: 14px;
+  }
+
+  .search-section {
+    padding: 0.4rem 0.8rem;
+    grid-template-columns: 1fr;
+  }
+
+  .toggle-buttons button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .product-count h2 {
+    font-size: 22px;
+  }
+
+  .product-count span {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+}

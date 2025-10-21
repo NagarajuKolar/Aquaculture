@@ -1,0 +1,341 @@
+.Home {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide.active {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrow.left {
+    left: 10px;
+    color: blue;
+}
+
+.arrow.right {
+    right: 10px;
+    color: red;
+}
+
+.home {
+    max-width: 95%;
+    margin: 30px auto;
+}
+
+.home-img img {
+    width: 750px;
+    height: 480px;
+    border-radius: 14px;
+    margin: auto;
+}
+
+
+.home-content {
+    flex: 1;
+    margin: 20px;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: blueviolet;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 20px;
+
+}
+
+.home-content h5 {
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+}
+
+.categories-section {
+    text-align: center;
+    background: #0b1220;
+    color: #00d7d9;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.categories-section h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.categories-section p {
+    color: #9abacb;
+    font-size: 1.4rem;
+    margin-bottom: 50px;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    justify-items: center;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.category-card {
+    background: linear-gradient(135deg, #0e2230, #0c1824);
+    border: 1px solid #007c8a;
+    border-radius: 16px;
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    border-color: #00d7d9;
+}
+
+.icon-box {
+    background: linear-gradient(135deg, #00e0ff, #00c2a8);
+    color: white;
+    font-size: 2.5rem;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.category-card h3 {
+    color: #baf7f9;
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+}
+
+.category-card button {
+    background: linear-gradient(90deg, #5579c1, #00e0ff);
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 18px;
+}
+.category-card button a {
+  text-decoration: none;
+}
+
+.category-card button:hover {
+    background: linear-gradient(90deg, #0055ff, #00bcd4);
+    box-shadow: 0 10px 20px linear-gradient(90deg, #00e0ff, #00bcd4);
+    transform: scale(1.05);
+}
+.view-btn{
+        background: linear-gradient(90deg, #5579c1, #00e0ff);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+
+@media (max-width: 1024px) {
+    .home {
+        height: auto;
+    }
+
+    .home-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-img img {
+        width: 560px;
+        height: 360px;
+        margin: 0 auto;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-content h5 {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 798px) {
+
+    .slide.active {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .home-img,
+    .home-content {
+        flex: 0 0 auto;
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .home-img img {
+        width: 100%;
+        height: auto;
+        max-width: 680px;
+    }
+
+    .home-content h1 {
+        font-size: 34px;
+        margin-top: 6px;
+    }
+
+    .home-content h5 {
+        font-size: 17px;
+        padding: 0 10px;
+    }
+
+    .arrow.left {
+        left: 6px;
+        font-size: 1.8rem;
+    }
+
+    .arrow.right {
+        right: 6px;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .categories-section {
+        padding: 40px 10px;
+    }
+
+    .categories-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .categories-section p {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .category-card {
+        padding: 20px 15px;
+        max-width: 100%;
+    }
+
+    .icon-box {
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+    }
+
+    .category-card h3 {
+        font-size: 1rem;
+    }
+
+    .category-card button {
+        font-size: 16px;
+        padding: 8px 35px;
+        width: 80%;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .home {
+        margin: 6px auto;
+        padding-bottom: 10px;
+    }
+
+    .home-img img {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .home-content {
+        margin: 12px 0px;
+        height: 130px;
+    }
+
+    .home-content h1 {
+        font-size: 22px;
+        line-height: 1.1;
+    }
+
+    .home-content h5 {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .arrow {
+        top: auto;
+        bottom: 10px;
+        transform: translateY(0);
+        background: rgba(255, 255, 255, 0.06);
+        padding: 6px;
+        border-radius: 6px;
+        font-size: 1.4rem;
+        display: none;
+    }
+
+    .arrow.left {
+        left: 12px;
+    }
+
+    .arrow.right {
+        right: 12px;
+    }
+    .slide.active {
+max-height: 500px;
+}
+}
