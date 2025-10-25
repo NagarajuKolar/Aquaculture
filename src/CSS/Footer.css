@@ -46,10 +46,13 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
 }
 
-.footer-services li,
-.footer-links li {
+.footer-services  a,
+.footer-links  a {
   margin-bottom: 8px;
   font-size: 15px;
   color: #e0f7fa;

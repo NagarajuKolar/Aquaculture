@@ -1,7 +1,7 @@
 import React from 'react'
 import '../CSS/Footer.css'
 import logo from '../assets/logo.png';
-
+import { Link } from 'react-router-dom';
 function Footer() {
     return (
         <>
@@ -28,17 +28,17 @@ function Footer() {
                     <div className="footer-links">
                         <h3>Quick Links</h3>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <Link to="/">Home</Link>
+                            <Link to="/about">About Us</Link>
+                            <Link to="/products">Products</Link>
+                            <Link to="/gallery">Gallery</Link>
+                            <Link to="/contact">Contact</Link>
                         </ul>
                     </div>
 
                     <div className="footer-contact">
                         <h3>Contact Us</h3>
-                        <p>
+                        <p>  
                             <strong>Office & Factory:</strong><br />
                             D-No.4-60/4, Plot No.114,<br />
                             Bahadurpally, Dundigal-Gandimaisamma (Mandal),<br />
@@ -50,9 +50,11 @@ function Footer() {
                 </div>
 
                 <div className="footer-bottom">
-                    <p>© 2025 <span>Meena Aqua Needs</span>. All rights reserved. | Committed to sustainable aquaculture excellence.</p>
+                    <p>©2025 <span>Meena Aqua Needs</span>. All rights reserved. | Committed to sustainable aquaculture excellence.</p>
                 </div>
+                
             </footer>
+            
 
 
         </>

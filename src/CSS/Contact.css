@@ -300,7 +300,10 @@
     .contact-left {
         width: 100%;
         min-height: 350px;
-        border-radius: 20px;
+        border:1px solid blue;
+        border-radius: 20px;   
+
+        
     }
 
     .contact-info-overlay {

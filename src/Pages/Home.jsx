@@ -107,9 +107,6 @@ function Home() {
             </section>
 
 
-
-
-
         </>
     )
 }

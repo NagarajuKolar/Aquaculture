@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from '../assets/logo.png';
 import { NavLink } from 'react-router-dom';
 import '../CSS/Navbar.css';
@@ -51,9 +51,9 @@ function Navbar() {
 
                         {isDropdownOpen && (
                             <div className="dropdown-menu">
-                                <NavLink  state={{ category:'All Products' }} to="/products">All Products</NavLink>
-                                {categories.map((cat)=>(
-                                     <NavLink key={cat._id}  state={{ category: cat.name }} to="/products">{cat.name}</NavLink>
+                                <NavLink state={{ category: 'All Products' }} to="/products">All Products</NavLink>
+                                {categories.map((cat) => (
+                                    <NavLink key={cat._id} state={{ category: cat.name }} to="/products">{cat.name}</NavLink>
                                 ))}
                                 {/* <NavLink to="/products/fish-feed">Fish Feed</NavLink>
                                 <NavLink to="/products/probiotics">Probiotics</NavLink>
@@ -68,6 +68,9 @@ function Navbar() {
 
                     <NavLink to="/contact" onClick={() => setIsDropdownOpen(false)} className={({ isActive }) => (isActive ? "active" : "")}>
                         Contact
+                    </NavLink>
+                    <NavLink to="/gallery" onClick={() => setIsDropdownOpen(false)} className={({ isActive }) => (isActive ? "active" : "")}>
+                        Gallery
                     </NavLink>
                 </div>
             </nav>
